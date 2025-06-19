@@ -1,3 +1,5 @@
+// package Exercise_2;
+
 import java.util.ArrayList;
 
  class Products{
@@ -17,7 +19,7 @@ import java.util.ArrayList;
         return this.product_id+" "+this.product_name+" "+this.product_price;
     }
 }
-public class Exercise_2 {
+class Exercise_2 {
     public static ArrayList<Products> prod_list=new ArrayList<>();
     public static Products linearSearch(ArrayList<Products> arr,int id){
         Products p=null;
