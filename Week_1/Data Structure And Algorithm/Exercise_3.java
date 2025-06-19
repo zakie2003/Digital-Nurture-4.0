@@ -16,7 +16,7 @@ class Orders{
     }
 }
 
-public class Excercise_3 {
+public class Exercise_3 {
     public static ArrayList<Orders> order_list=new ArrayList<>();
 
     public static void show_item(ArrayList<Orders> ord){
