@@ -1,0 +1,5 @@
+Q1. Explain the concept of recursion and how it can simplify certain problems.
+
+Recursion is a programming technique in which a function calls itself to solve a problem, usually based on a specific condition known as the base case, which stops the recursion.
+It can simplify various problem where we need to check all kind of possible solution by breaking them into smaller, similar subproblems.For Example,iterating over a tree or just finding
+factorial of a number.
