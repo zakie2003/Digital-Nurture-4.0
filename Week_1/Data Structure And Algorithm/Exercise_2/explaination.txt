@@ -1,0 +1,12 @@
+Q1. Explain Big O notation and how it helps in analyzing algorithms.
+
+Big O notation is a mathematical way to describe the time or space complexity of an algorithm in terms of input size. 
+It helps us understand how an algorithm's performance scales as the input grows.
+By focusing on the highest-order term, Big O ignores constants and lower terms to show the algorithm’s efficiency in the worst-case scenario.
+
+Q2. Describe the best, average, and worst-case scenarios for search operations.
+
+In search operations, the best-case scenario occurs when the target element is found at the first position, giving constant time (O(1)). 
+The average-case assumes the element is located somewhere in the middle, leading to a linear time (O(n/2), simplified to O(n) in Big O terms).
+The worst-case happens when the element is at the last position or not present at all, also resulting in linear time (O(n)), especially in linear search. 
+For optimized algorithms like binary search, the worst-case is reduced to O(log n)
