@@ -5,7 +5,7 @@ import static org.mockito.Mockito.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.*;
-public class DataServiceTest {
+public class Excercise_1 {
     
     @Mock
     private ExternalAPI externalAPI;
