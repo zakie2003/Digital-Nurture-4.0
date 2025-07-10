@@ -1,6 +1,11 @@
 package com.cognizant.spring_learn;
 
 import com.cognizant.spring_learn.model.Country;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
 import org.slf4j.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -20,11 +25,14 @@ public class CountryController {
     private ApplicationContext context;
 
     @GetMapping("/country")
-    public Country getCountryIndia() {
+    public List<Country> getCountryIndia() {
         LOGGER.info("START getCountryIndia");
-        Country country = (Country) context.getBean("country");
-        LOGGER.info("END getCountryIndia");
-        return country;
+        Map<String, Country> countryMap = context.getBeansOfType(Country.class);
+        List<Country> countries = new ArrayList<>(countryMap.values());
+
+        LOGGER.info("END getAllCountries");
+        return countries;
+
     }
 
     @GetMapping("/country/{code}")
