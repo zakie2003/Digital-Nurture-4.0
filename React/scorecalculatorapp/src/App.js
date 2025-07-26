@@ -6,11 +6,13 @@ import { CalculateScore } from './components/Caclculator';
 function App() {
   return (
     <div className="App">
-      <CalculateScore Name={"Steve"}
+      {/* <CalculateScore Name={"Steve"}
       School={"DNY Public School"}
       total={284}
       goal={3}  
-      />
+      /> */}
+
+      <Timer/>
     </div>
   );
 }
